@@ -3,7 +3,7 @@
 <head>
 
 <!-- Title -->
-<title>Moje. - Responsive Bootstrap Resume vCard HTML/CSS Template</title>
+<title>Zuri Hunter | Aspiring Developer </title>
 
 <!-- Meta -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -38,7 +38,7 @@
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
 <link rel="stylesheet" type="text/css" href="css/style.min.css" />
-<link rel="stylesheet" type="text/css" href="colors/blue.css" id="colors" />
+<link rel="stylesheet" type="text/css" href="colors/red.css" id="colors" />
 
 </head>
 
@@ -59,15 +59,15 @@
 <!-- Loader / End -->
 
 <!-- Header  -->
-<header id="nav-content" class="vertical-nav nav-white">
+<header id="nav-content" class="vertical-nav nav-black">
 
 	<!-- Logo -->
 	<div class="my-logo">
-    	<a href="#profile"><img src="images/my-photo.jpg" alt="" /></a>
+    	<a href="#profile"><img src="images/zh.jpg" alt="" /></a>
     </div>
     
     <!-- Navigation -->
-    <ul class="menu nav me-nav">
+    <ul class="menu nav me-nav nav-black">
     	<li class="menu-item active"><a href="#profile"><span>Profile</span><i class="fa fa-user"></i></a></li>
         <li class="menu-item"><a href="#resume"><span>Resume</span><i class="fa fa-pencil"></i></a></li>
         <li class="menu-item"><a href="#portfolio"><span>Portfolio</span><i class="fa fa-desktop"></i></a></li>
@@ -77,7 +77,7 @@
     </ul>
     
     <!-- Copyright -->
-    <span class="copyright hidden-md">© 2014 <b>Johnaton Doe</b>.</span>
+    <span class="copyright hidden-md">© 2015 <b>Zuri Hunter</b>.</span>
 
 </header>
 <!-- Header / End -->
@@ -89,8 +89,11 @@
 	<section id="profile" class="black">
     
     	<!-- Background photo -->
-    	<div id="profile-bg" class="editable-alpha" data-alpha="40"><img src="images/backgrounds/profile-bg.jpg" alt="" /></div>
+    	<div id="profile-bg" class="editable-alpha" data-alpha="40"><img src="images/backgrounds/profile-bg-video.jpg" alt="" /></div>
     
+    	<!-- Video Background Player -->
+    	<div id="profile-bg-player" class="player" data-property="{videoURL:'http://youtu.be/Nr1LidQYwKM',containment:'#profile',startAt:00,stopAt:200,mute:true,autoPlay:true,loop:true,showControls:false}"></div>
+    		
     	<div class="content padded dark">
         
         	<!-- Top Bar -->
@@ -98,26 +101,26 @@
             
             	<!-- Social media -->
             	<div class="pull-left">
-                	<span class="hiddend-sm hidden-xs">Check my social media! &nbsp; &nbsp; </span>
+                	<span class="hiddend-sm hidden-xs">Check Me Out on Social Media! &nbsp; &nbsp; </span>
                     <ul class="social-icons si-pull-up">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.github.com/ZuriHunter"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://twitter.com/ZuriHunter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/pub/zuri-hunter/14/ba5/748"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
                 
                 <!-- URL -->
                 <div class="pull-right">
-                	<a href="#" class="hidden-xs">www.suelo.pl</a>
+                	<a href="https://www.thestruggleblog.com" class="hidden-xs">www.thestruggleblog.com</a>
                 </div>
                 
             </div>
         
 			<!-- Profile Content -->
             <div class="profile-content">
-            	<h1 class="short">Johnatan Doe</h1>
-                <h5>I am <span class="text-primary">proffessional</span> webdesigner & webdeveloper.</h5>
-                <a href="http://themeforest.net/item/me-responsive-bootstrap-3-vcard-htmlcss-theme/7800423?WT.ac=portfolio&WT.z_author=suelo" class="btn btn-primary" target="_blank">Buy this theme!</a> <a href="#contact" class="btn btn-default">Contact me</a>
+            	<h1 class="short" style="font-weight: bold;">Zuri Hunter</h1>
+                <h5><span class="text-primary" style="font-weight: 900;">I am Howard University Alumni & Aspiring Web Developer </span></h5>
+                <a href="#contact" class="btn btn-red">Contact Me</a>
             </div>
             
             <!-- Bottom Bar -->
@@ -125,9 +128,9 @@
             
             	<!-- Contact List -->
                 <ul class="list-inline">
-                  <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>1111-A Nowhere Lane, Outta Sight, State 90378, USA</li>
-                  <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="#">johnathandoe@suelo.pl</a></li>
-                  <li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i>+0(31)6 89764536</li>
+                  <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>Washington DC Area</li>
+                  <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="#">zurihunter92@gmail.com</a></li>
+                  <li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i>(908) 472-4688</li>
                 </ul>
              
             </div>
@@ -138,7 +141,7 @@
     <!-- Profile / End -->
     
     <!-- Resume -->
-	<section id="resume">
+	<section id="resume" class="black">
     
     	<div class="content dimmed-effect padded-short">
         	
@@ -147,23 +150,35 @@
               <div class="col-lg-4">
               
               	<!-- Box - About Me -->
-                <div class="resume-box animated slide-in-top">
-                  <i class="title-icon text-blue flaticon-speech43"></i>
+                <div class="resume-box animated slide-in-top" style="background: white;">
+                  <i class="title-icon text-red flaticon-speech43"></i>
                   <h3>Who am I?</h3>
-                  <p class="lead">Sed porttitor nulla eget enim gravida blandit. Integer risus nunc, molestie a nibh in, interdum fringilla urna. </p>
-                  <p>Sed lacinia, nibh sit amet auctor vestibulum, enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.</p>
-                  <p>Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
-                  <a href="#portfolio" class="btn btn-black">See my portfolio</a> <a href="#contact" class="btn btn-default">Contact me</a>
+                  <p class="lead"><a style="font-weight:bold;">AMBITOUS.</a> <a style="font-weight:bold;">PASSIONATE.</a> <a style="font-weight:bold;">RESILIENT.</a> Those are the three traits that will reveal to you who am I.</p> 
+
+                  <p>I recently graduated from Howard University in May 2015 with a Bachelors in Computer Information Systems. I have a strong passion for exploring and teaching web development. I am looking to gain more experience and exposure in the web development field in creating and analyzing major web applications that can stand as a product or help support the underlining operations of a businesss.</p>
+                  <p>In my spare time I volunteer as Ruby on Rails Leader and Mentor Coordinator for <a href="https://www.womenwhocodedc.com">Women Who Code </a>, a mentor in <a href="https://www.blackgirlscode.com">Black Girls Code</a> and participate in Hackathons within the DMV area. </p>
+                  <p>I also do freelance work for <a href="https://www.almece.com"> Almece</a>on the side for developing web applications using Ruby on Rails, HTML/CSS and Javascript.</p>
+                  <a href="#portfolio" class="btn btn-black">View My Portfolio</a> <a href="#contact" class="btn btn-default">Contact me</a>
                 </div>
                 
                 <!-- Box - Skills & Attributes -->
-                <div class="resume-box animated slide-in-left appear-second">
-                  <i class="title-icon text-green flaticon-open79"></i>
+                <div class="resume-box animated slide-in-left appear-second" style="background: white;">
+                  <i class="title-icon text-red flaticon-open79"></i>
                   <h3>Skills &amp; Attributes</h3>
                   <!-- Sinlge skill -->
                   <div class="skill">
-                  	<span class="skill-name">Adobe Photoshop</span>
-                    <div class="skill-bar sb-green">
+                  	<span class="skill-name">Ruby on Rails</span>
+                    <div class="skill-bar sb-red">
+                    	<div class="skill-rate-on"></div>
+                        <div class="skill-rate-on"></div>
+                        <div class="skill-rate-on"></div>
+                        <div class="skill-rate-off"></div>
+                    </div>
+                  </div>
+                  <!-- Sinlge skill -->
+                  <div class="skill">
+                  	<span class="skill-name">HTML/CSS/Bootstrap</span>
+                    <div class="skill-bar sb-red">
                     	<div class="skill-rate-on"></div>
                         <div class="skill-rate-on"></div>
                         <div class="skill-rate-on"></div>
@@ -172,8 +187,8 @@
                   </div>
                   <!-- Sinlge skill -->
                   <div class="skill">
-                  	<span class="skill-name">Adobe Dreamweaver</span>
-                    <div class="skill-bar sb-green">
+                  	<span class="skill-name">Java</span>
+                    <div class="skill-bar sb-red">
                     	<div class="skill-rate-on"></div>
                         <div class="skill-rate-on"></div>
                         <div class="skill-rate-off"></div>
@@ -182,21 +197,11 @@
                   </div>
                   <!-- Sinlge skill -->
                   <div class="skill">
-                  	<span class="skill-name">HTML/CSS</span>
-                    <div class="skill-bar sb-green">
+                  	<span class="skill-name">Python</span>
+                    <div class="skill-bar sb-red">
                     	<div class="skill-rate-on"></div>
-                        <div class="skill-rate-on"></div>
-                        <div class="skill-rate-on"></div>
-                        <div class="skill-rate-on"></div>
-                    </div>
-                  </div>
-                  <!-- Sinlge skill -->
-                  <div class="skill">
-                  	<span class="skill-name">jQuery</span>
-                    <div class="skill-bar sb-green">
-                    	<div class="skill-rate-on"></div>
-                        <div class="skill-rate-on"></div>
-                        <div class="skill-rate-on"></div>
+                        <div class="skill-rate-off"></div>
+                        <div class="skill-rate-off"></div>
                         <div class="skill-rate-off"></div>
                     </div>
                   </div>
@@ -207,15 +212,15 @@
               <div class="col-md-6 col-lg-4">
               
               	<!-- Box - Specialities -->
-                <div class="resume-box animated slide-in-right">
+                <div class="resume-box animated slide-in-right" style="background: white;">
                   <i class="title-icon text-red flaticon-mouse19"></i>
                   <h3>My Specialities</h3>
                   <!-- Speciality -->
                   <div class="speciality">
                   	<i class="speciality-icon text-red flaticon-bulb11"></i>
                     <div class="speciality-content">
-                    	<h5 class="short">Web design</h5>
-                        <p class="speciaity-description">Great, modern website designes.</p>
+                    	<h5 class="short">Back-End Development</h5>
+                        <p class="speciaity-description">Build the brain, database and logic of the web application.</p>
                     </div>
                   </div>
                   <!-- Speciality -->
@@ -223,64 +228,109 @@
                   	<i class="speciality-icon text-red flaticon-codings1"></i>
                     <div class="speciality-content">
                     	<h5 class="short">Front-End Web Development</h5>
-                        <p class="speciaity-description">Great, modern website designes.</p>
+                        <p class="speciaity-description">Create flashy, appealing modern design websites for users.</p>
                     </div>
                   </div>
                   <!-- Speciality -->
                   <div class="speciality">
                   	<i class="speciality-icon text-red flaticon-tablet42"></i>
                     <div class="speciality-content">
-                    	<h5 class="short">App Design</h5>
-                        <p class="speciaity-description">Great, modern website designes.</p>
+                    	<h5 class="short">System Analyst</h5>
+                        <p class="speciaity-description">Research requirements for system development.</p>
                     </div>
                   </div>
                 </div>
                 
                 <!-- Box - Education & Jobs -->
-                <div class="resume-box animated slide-in-left">
-                  <i class="title-icon text-yellow flaticon-document56"></i>
-                  <h3>Education & Jobs</h3>
+                <div class="resume-box animated slide-in-left" style="background: white;">
+                  <i class="title-icon text-red flaticon-document56"></i>
+                  <h3>Education</h3>
                   <div class="timeline">
+
+                  <div class="timeline-event te-red">
+                      <div class="event-date">September 2006 - June 2010</div>
+                      <div class="event-name">Essex County Vocational Technical High School</div>
+                      <div class="event-description">Earned my high school diploma with a concentration in "Business Technology."</div>
+                    </div>
                   	<!-- Single event -->
-                  	<div class="timeline-event te-yellow">
-                      <div class="event-date">Jan 2004 - Dec 2006</div>
-                      <div class="event-name">Specialization course</div>
-                      <div class="event-description">University of studies, Poland, Cracow</div>
+                  	<div class="timeline-event te-red">
+                      <div class="event-date">August 2010 - May 2015</div>
+                      <div class="event-name">Howard University</div>
+                      <div class="event-description">Earned my bachelors in Computer Information Systems.</div>
                     </div>
                     <!-- Single event -->
-                  	<div class="timeline-event te-yellow">
-                      <div class="event-date">Jan 2004 - Dec 2006</div>
-                      <div class="event-name">Specialization course</div>
-                      <div class="event-description">University of studies, Poland, Cracow</div>
-                    </div>
-                    <!-- Single event -->
-                  	<div class="timeline-event te-yellow">
-                      <div class="event-date">Jan 2004 - Dec 2006</div>
-                      <div class="event-name">Specialization course</div>
-                      <div class="event-description">University of studies, Poland, Cracow</div>
-                    </div>
-                  </div>
+                </div>
                 </div>
                 
+
+                 
               </div>
               
               <div class="col-md-6 col-lg-4">
+
+               <div class="resume-box animated slide-in-right" style="background: white;">
+                  <i class="title-icon text-red flaticon-document56"></i>
+                  <h3>Jobs</h3>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-red">
+                      <div class="event-date">June 2011 - August 2011</div>
+                      <div class="event-name">Chubb Insurance</div>
+                      <div class="event-description">Intern- Global Strategic Sourcing</div>
+                      <div class="event-description">
+                      <ul>
+                        <li>Assisted contract managers with documents and spreadsheetsl </li>
+                        <li>Reported “Service Level Agreements” within contracts to customers</li>
+                        <li>Operated Contract Management System called “Ariba” </li>
+                        <li>Participated in a case study on the future strategies for the corporation usage in social media</li>
+                        <li>Received tutorial on what contractual language to look for within specific agreements </li>
+                      </ul>
+                      </div>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-red">
+                      <div class="event-date">May 2012 - August 2012</div>
+                      <div class="event-name">Chubb Insurance </div>
+                      <div class="event-description">Intern- Business Innovation</div>
+                      <div class="event-description">
+                      <ul>
+                        <li>Created an excel document through Visual Basic Application for the management of groups on company’s internal social media platform </li>
+                        <li>Developed a marketing strategy for company’s pilot program on LinkedIn </li>
+                        <li>Monitored department’s investment and future return on their “Motivate-Deliver-Drive” idea platform </li>
+                      </ul>
+                      </div>
+
+                    </div>
+                    <div class="timeline-event te-red">
+                      <div class="event-date">July 2015 - Present</div>
+                      <div class="event-name">Cushman & Wakefield </div>
+                      <div class="event-description">Assistant Property Manager</div>
+                      <div class="event-description">
+                      <ul>
+                        <li>Monitor renewals. Distribute and follow-up on renewal notices </li>
+                        <li>Update availability report, process applications for approvals and submit processed applications to the Property Manager for approval. </li>
+                        <li>Maintain accurate monthly commission sheets on leases, renewals and delinquencies for bonus purposes. </li>
+                      </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               
               	<!-- Box - Languages -->
-                <div class="resume-box animated slide-in-right appear-second">
-                  <i class="title-icon text-orange flaticon-chat25"></i>
+                <div class="resume-box animated slide-in-right appear-second" style="background: white;">
+                  <i class="title-icon text-red flaticon-chat25"></i>
                   <h3>Languages</h3>
                   <!-- Single skill -->
                   <div class="skill">
                   	<span class="skill-name">English</span>
-                    <div class="skill-bar sb-orange">
+                    <div class="skill-bar sb-red">
                     	<div class="skill-rate-on"></div>
                         <div class="skill-rate-on"></div>
                         <div class="skill-rate-on"></div>
                         <div class="skill-rate-on"></div>
                     </div>
                   </div>
-                  <!-- Single skill -->
+                  <!-- Single skill 
                   <div class="skill">
                   	<span class="skill-name">German</span>
                     <div class="skill-bar sb-orange">
@@ -289,22 +339,27 @@
                         <div class="skill-rate-off"></div>
                         <div class="skill-rate-off"></div>
                     </div>
-                  </div>
+                  </div>-->
                 </div>
                 
-                <!-- Box - Hobbies -->
-                <div class="resume-box animated slide-in-bottom">
-                  <i class="title-icon text-violet flaticon-joystick4"></i>
+                
+              
+                
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                  <!-- Box - Hobbies -->
+                <div class="resume-box animated slide-in-bottom" style="background: white;">
+                  <i class="title-icon text-red flaticon-joystick4"></i>
                   <h3>Hobbies &amp; Interests</h3>
                   <!-- List group -->
                   <ul class="list-group">
-                    <li class="list-group-item">Beer</li>
-                    <li class="list-group-item">Sport</li>
-                    <li class="list-group-item">Music</li>
-                    <li class="list-group-item">Videogames</li>
+                    <li class="list-group-item">Watch American Football</li>
+                    <li class="list-group-item">Play Video Games</li>
+                    <li class="list-group-item">Play Billiards</li>
+                    <li class="list-group-item">Practice Yoga</li>
                   </ul>
                 </div>
-                
               </div>
               
             </div>
@@ -322,104 +377,117 @@
           <!-- Single Project --> 
           <div class="single-project animated fade-in">
             <div class="project-image">
-                <img src="images/portfolio/project_01.jpg" alt="" />
+                <img src="images/portfolio/crypheka-project-main.png" alt="" />
             </div>
             <div class="project-mask">
               <div class="project-info">
-                <div class="project-title">Swimming Pool</div>
-                <div class="project-caption text-blue">Webdesgin</div>
-                <div class="project-buttons"><a href="projects/ajax-project-details.html" class="ajax-portfolio-link btn btn-blue btn-sm">View it</a> <a href="#" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
+                <div class="project-title">Crypheka, LLC.</div>
+                <div class="project-caption text-red">Front-End Development</div>
+                <div class="project-buttons"><a href="projects/cryphekallc-project-details.html" class="ajax-portfolio-link btn btn-red btn-sm">View it</a> <a href="https://github.com/ZuriHunter/cryphekallc" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
               </div>
             </div>
           </div>
           <!-- Single Project --> 
           <div class="single-project animated fade-in appear-third">
             <div class="project-image">
-                <img src="images/portfolio/project_02.jpg" alt="" />
+                <img src="images/portfolio/onemonthrails-project-main.png" alt="" />
             </div>
             <div class="project-mask">
               <div class="project-info">
-                <div class="project-title">Shopping Mall</div>
-                <div class="project-caption text-yellow">Webdesgin / Webdevelopment</div>
-                <div class="project-buttons"><a href="projects/ajax-project-details.html" class="ajax-portfolio-link btn btn-yellow btn-sm">View it</a> <a href="#" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
+                <div class="project-title">Pinterest Demo</div>
+                <div class="project-caption text-red">Ruby On Rails</div>
+                <div class="project-buttons"><a href="projects/onemonthrails-project-details.html" class="ajax-portfolio-link btn btn-red btn-sm">View it</a> <a href="https://github.com/ZuriHunter/OneMonthRails" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
               </div>
             </div>
           </div>
           <!-- Single Project --> 
           <div class="single-project animated fade-in appear-second">
             <div class="project-image">
-                <img src="images/portfolio/project_03.jpg" alt="" />
+                <img src="images/portfolio/tasteofculture-project-main.png" alt="" />
             </div>
             <div class="project-mask">
               <div class="project-info">
-                <div class="project-title">Animal Charity</div>
-                <div class="project-caption text-green">Corporate Identity</div>
-                <div class="project-buttons"><a href="projects/ajax-project-details.html" class="ajax-portfolio-link btn btn-green btn-sm">View it</a> <a href="#" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
+                <div class="project-title">Taste of Culture</div>
+                <div class="project-caption text-red">Front-End Development</div>
+                <div class="project-buttons"><a href="projects/tasteofculture-project-details.html" class="ajax-portfolio-link btn btn-red btn-sm">View it</a> <a href="https://github.com/ZuriHunter/taste_of_culture" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
               </div>
             </div>
           </div>
           <!-- Single Project --> 
           <div class="single-project animated fade-in appear-fourth">
             <div class="project-image">
-                <img src="images/portfolio/project_04.jpg" alt="" />
+                <img src="images/portfolio/toodoo-project-main.png" alt="" />
             </div>
             <div class="project-mask">
               <div class="project-info">
-                <div class="project-title">Be Pregnant</div>
-                <div class="project-caption text-red">Webdesgin / Corporate Identity</div>
-                <div class="project-buttons"><a href="projects/ajax-project-details.html" class="ajax-portfolio-link btn btn-red btn-sm">View it</a> <a href="#" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
+                <div class="project-title">TooDoo</div>
+                <div class="project-caption text-red">Ruby On Rails</div>
+                <div class="project-buttons"><a href="projects/toodoo-project-details.html" class="ajax-portfolio-link btn btn-red btn-sm">View it</a> <a href="https://github.com/ZuriHunter/too_doo" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
               </div>
             </div>
           </div>
           <!-- Single Project --> 
           <div class="single-project animated fade-in">
             <div class="project-image">
-                <img src="images/portfolio/project_05.jpg" alt="" />
+                <img src="images/portfolio/moviereview-project-main.png" alt="" />
             </div>
             <div class="project-mask">
               <div class="project-info">
-                <div class="project-title">Booking Store</div>
-                <div class="project-caption text-green">Webdesgin / Webdevelopment</div>
-                <div class="project-buttons"><a href="projects/ajax-project-details.html" class="ajax-portfolio-link btn btn-green btn-sm">View it</a> <a href="#" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
+                <div class="project-title">Movie Review</div>
+                <div class="project-caption text-red">Ruby On Rails </div>
+                <div class="project-buttons"><a href="projects/moviereview-project-details.html" class="ajax-portfolio-link btn btn-red btn-sm">View it</a> <a href="https://github.com/ZuriHunter/movie_review" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
               </div>
             </div>
           </div>
           <!-- Single Project --> 
           <div class="single-project animated fade-in appear-second">
             <div class="project-image">
-                <img src="images/portfolio/project_06.jpg" alt="" />
+                <img src="images/portfolio/recipebox-project-main.png" alt="" />
             </div>
             <div class="project-mask">
               <div class="project-info">
-                <div class="project-title">Social Media App</div>
-                <div class="project-caption text-orange">App Design</div>
-                <div class="project-buttons"><a href="projects/ajax-project-details.html" class="ajax-portfolio-link btn btn-orange btn-sm">View it</a> <a href="#" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
+                <div class="project-title">My Recipe Box</div>
+                <div class="project-caption text-red">Ruby on Rails</div>
+                <div class="project-buttons"><a href="projects/myrecipebox-project-details.html" class="ajax-portfolio-link btn btn-red btn-sm">View it</a> <a href="https://github.com/ZuriHunter/recipebox" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
               </div>
             </div>
           </div>
           <!-- Single Project --> 
           <div class="single-project animated fade-in appear-fourth">
             <div class="project-image">
-                <img src="images/portfolio/project_07.jpg" alt="" />
+                <img src="images/portfolio/comingsoon.jpg" alt="" />
             </div>
             <div class="project-mask">
               <div class="project-info">
-                <div class="project-title">Medical Business</div>
-                <div class="project-caption text-blue">Webdesgin / Corporate Identity</div>
-                <div class="project-buttons"><a href="projects/ajax-project-details.html" class="ajax-portfolio-link btn btn-blue btn-sm">View it</a> <a href="#" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
+                <div class="project-title">Zikipedia</div>
+                <div class="project-caption text-red">Ruby on Rails</div>
+                <div class="project-buttons"><a href="projects/zikipedia-project-details.html" class="ajax-portfolio-link btn btn-red btn-sm">View it</a> <a href="https://github.com/ZuriHunter/zikipedia" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
               </div>
             </div>
           </div>
           <!-- Single Project --> 
           <div class="single-project animated fade-in appear-third">
             <div class="project-image">
-                <img src="images/portfolio/project_08.jpg" alt="" />
+                <img src="images/portfolio/comingsoon.jpg" alt="" />
             </div>
             <div class="project-mask">
               <div class="project-info">
-                <div class="project-title">Pice of cake!</div>
-                <div class="project-caption text-orange">Webdesgin / Webdevelopment</div>
-                <div class="project-buttons"><a href="projects/ajax-project-details.html" class="ajax-portfolio-link btn btn-orange btn-sm">View it</a> <a href="#" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
+                <div class="project-title">Drizzle</div>
+                <div class="project-caption text-red">Ruby on Rails</div>
+                <div class="project-buttons"><a href="projects/drizzle-project-details.html" class="ajax-portfolio-link btn btn-red btn-sm">View it</a> <a href="https://github.com/ZuriHunter/drizzle" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Single Project --> 
+          <div class="single-project animated fade-in appear-third">
+            <div class="project-image">
+                <img src="images/portfolio/comingsoon.jpg" alt="" />
+            </div>
+            <div class="project-mask">
+              <div class="project-info">
+                <div class="project-title">Work Out Log</div>
+                <div class="project-caption text-red">Ruby on Rails</div>
+                <div class="project-buttons"><a href="projects/workoutlog-project-details.html" class="ajax-portfolio-link btn btn-red btn-sm">View it</a> <a href="https://github.com/ZuriHunter/work_out_log" target="_blank" class="btn btn-default btn-sm">Online version</a></div>
               </div>
             </div>
           </div>
@@ -444,147 +512,84 @@
               <div class="post-carousel animated slide-in-top">
                 <!-- Single Post -->
                 <article class="post post-carousel-item">
-                    <div class="post-image"><img src="images/blog/post_01.jpg" alt="" /></div>
+                    <div class="post-image"><img src="images/blog/noob.gif" alt="" /></div>
                     <div class="post-content-holder">
                         <div class="post-content">
                             <div class="post-info clearfix">
-                                <span class="post-date">22 May, 2014</span>
+                                <span class="post-date">15 May, 2015</span>
                                 <div class="post-meta">
-                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
-                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                                    <span><i class="fa fa-comment"></i><a href="#">0 comments</a></span>
+                                    <span><i class="fa fa-tag"></i><a href="#">Professional Development</a></span>
                                 </div>
                             </div>
                             <div class="post-text">
-                                <h3><a href="single-post.html">Awesome Seattle Cycle Trip</a></h3>
-                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
-                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
-                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
+                                <h3><a href="life-as-a-self-taught-developer.html">Life as a Self-Taught Developer</a></h3>
+                                <p class="lead">A Noob but then not really a Noob..</p>
+                                <p>How did I start? <br/> Where I believe my current skill level is at? <br/> How I feel about the entire journey? <br/> And what resources I found extremely useful </p>
+                                <a href="life-as-a-self-taught-developer.html" class="btn btn-primary btn-sm">Read More</a>
                             </div>
                         </div>
                     </div>
                 </article>
                 <!-- Single Post -->
                 <article class="post post-carousel-item">
-                    <div class="post-image"><img src="images/blog/post_02.jpg" alt="" /></div>
+                    <div class="post-image"><img src="images/blog/papcarclo.gif" alt="" /></div>
                     <div class="post-content-holder">
                         <div class="post-content">
                             <div class="post-info clearfix">
-                                <span class="post-date">22 May, 2014</span>
+                                <span class="post-date">3 June, 2015</span>
                                 <div class="post-meta">
-                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
-                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                                    <span><i class="fa fa-comment"></i><a href="#">0 comments</a></span>
+                                    <span><i class="fa fa-tag"></i><a href="#">Ruby on Rails</a></span>
                                 </div>
                             </div>
                             <div class="post-text">
-                                <h3><a href="single-post.html">Brand New PC</a></h3>
-                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
-                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
-                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
+                                <h3><a href="single-post.html">PaperClip vs. CarrierWave vs. Cloudinary</a></h3>
+                                <p class="lead">Popular Image Uploading gems in the Ruby On Rails Community.</p>
+                                <p>After pages and pages of StackOverflow and YouTube videos I have finally found a pro and con guide on our famous image uploaders!</p>
+                                <a href="single-post.html" class="btn btn-primary btn-sm">Read More</a>
                             </div>
                         </div>
                     </div>
                 </article>
                 <!-- Single Post -->
                 <article class="post post-carousel-item">
-                    <div class="post-image"><img src="images/blog/post_03.jpg" alt="" /></div>
+                    <div class="post-image"><img src="images/blog/bgcpost.jpg" alt="" /></div>
                     <div class="post-content-holder">
                         <div class="post-content">
                             <div class="post-info clearfix">
-                                <span class="post-date">22 May, 2014</span>
+                                <span class="post-date">18 July, 2015</span>
                                 <div class="post-meta">
-                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
-                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                                    <span><i class="fa fa-comment"></i><a href="#">0 comments</a></span>
+                                    <span><i class="fa fa-tag"></i><a href="#">Community Service</a></span>
                                 </div>
                             </div>
                             <div class="post-text">
-                                <h3><a href="single-post.html">To be or not to be?</a></h3>
-                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
-                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
-                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
+                                <h3><a href="single-post.html">Black Girls Code</a></h3>
+                                <p class="lead">Build A Game Workshop</p>
+                                <p>My amazing time working as a teacher assistant with 10-13 girls, helping them understand the basics of programming while building a fun game! </p>
+                                <a href="single-post.html" class="btn btn-primary btn-sm">Read More</a>
                             </div>
                         </div>
                     </div>
                 </article>
                 <!-- Single Post -->
                 <article class="post post-carousel-item">
-                    <div class="post-image"><img src="images/blog/post_04.jpg" alt="" /></div>
+                    <div class="post-image"><img src="images/blog/angelcapital.png" alt="" /></div>
                     <div class="post-content-holder">
                         <div class="post-content">
                             <div class="post-info clearfix">
-                                <span class="post-date">22 May, 2014</span>
+                                <span class="post-date">9 August, 2015</span>
                                 <div class="post-meta">
-                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
-                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                                    <span><i class="fa fa-comment"></i><a href="#">0 comments</a></span>
+                                    <span><i class="fa fa-tag"></i><a href="#">Hackathon</a></span>
                                 </div>
                             </div>
                             <div class="post-text">
-                                <h3><a href="single-post.html">New Software for my company</a></h3>
-                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
-                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
-                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Single Post -->
-                <article class="post post-carousel-item">
-                    <div class="post-image"><img src="images/blog/post_05.jpg" alt="" /></div>
-                    <div class="post-content-holder">
-                        <div class="post-content">
-                            <div class="post-info clearfix">
-                                <span class="post-date">22 May, 2014</span>
-                                <div class="post-meta">
-                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
-                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
-                                </div>
-                            </div>
-                            <div class="post-text">
-                                <h3><a href="single-post.html">Awesome Seattle Cycle Trip</a></h3>
-                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
-                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
-                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Single Post -->
-                <article class="post post-carousel-item">
-                    <div class="post-image"><img src="images/blog/post_06.jpg" alt="" /></div>
-                    <div class="post-content-holder">
-                        <div class="post-content">
-                            <div class="post-info clearfix">
-                                <span class="post-date">22 May, 2014</span>
-                                <div class="post-meta">
-                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
-                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
-                                </div>
-                            </div>
-                            <div class="post-text">
-                                <h3><a href="single-post.html">Brand new PC</a></h3>
-                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
-                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
-                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- Single Post -->
-                <article class="post post-carousel-item">
-                    <div class="post-image"><img src="images/blog/post_07.jpg" alt="" /></div>
-                    <div class="post-content-holder">
-                        <div class="post-content">
-                            <div class="post-info clearfix">
-                                <span class="post-date">22 May, 2014</span>
-                                <div class="post-meta">
-                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
-                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
-                                </div>
-                            </div>
-                            <div class="post-text">
-                                <h3><a href="single-post.html">To be or not to be?</a></h3>
-                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
-                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
-                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
+                                <h3><a href="single-post.html">Capitol One & AngelHack SmallBiz Hackathon</a></h3>
+                                <p class="lead">Tech Enthusiasts + Business Minds = Creative Solutions</p>
+                                <p>My experience in connecting with entrepreneurs, developers and designers in creating a product that will bring a creative and successful solution to small business owners.</p>
+                                <a href="single-post.html" class="btn btn-primary btn-sm">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -625,12 +630,12 @@
         <!-- Contact Content -->
         <div class="content contact-content padded dark animated slide-in-left">
         	<i class="title-icon text-primary flaticon-speech43"></i>
-        	<h2>Do you want to hire me?</h2>
+        	<h2>Do You Want To Hire Me?</h2>
             <!-- Contact List -->
             <ul class="list-unstyled list-unstyled-icons">
               <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>1111-A Nowhere Lane,<br />Outta Sight,<br />State 90378, USA</li>
-              <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="#">johnathandoe@suelo.pl</a></li>
-              <li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i>+0(31)6 89764536</li>
+              <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="#">zurihunter92@gmail.com</a></li>
+              <li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i>(908) 472-4688</li>
             </ul>
             <br/><br/>
             <p><a href="#" class="btn btn-primary">Download my CV</a></p>
@@ -693,11 +698,21 @@
 <script type="text/javascript" src="js/jquery.appear.js"></script>
 <script type="text/javascript" src="js/waypoints.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
 <!-- Custom Script -->
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/GoogleMap-dark.js"></script>
+<script>
+/* Video Background */
+$("#profile-bg").hide();
+$(".player").mb_YTPlayer();
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	$("#wrapper_mbYTP_profile-bg-player").hide();
+	$("#profile-bg").show();
+} 
+</script>
 
 <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
 <!--
