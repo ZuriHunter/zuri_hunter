@@ -5,9 +5,9 @@
 	$message = trim($_POST['message']);
 	
 	$emailTo = 'zurihunter92@gmail.com'; //Put your own email address here
-	$subject = 'Message From Your Professional Site.';
+	$subject = 'Message.';
 	$body = "Name: $name \n\nEmail: $email \n\nMessage:\n$message";
-	$headers = 'From: '.$email."\r\n" .
+	$headers = 'From: nonreply@zurihunter.github.io'.$email."\r\n" .
         'Reply-To: '.$email."\r\n".
 		'Content-Type:text/html;charset=utf-8'."\r\n";
 
