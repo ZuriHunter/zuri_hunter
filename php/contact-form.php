@@ -4,8 +4,8 @@
 	$email = trim($_POST['email']);
 	$message = trim($_POST['message']);
 	
-	$emailTo = 'yourmail@gmail.com'; //Put your own email address here
-	$subject = 'Message from your website.';
+	$emailTo = 'zurihunter92@gmail.com'; //Put your own email address here
+	$subject = 'Message From Your Professional Site.';
 	$body = "Name: $name \n\nEmail: $email \n\nMessage:\n$message";
 	$headers = 'From: '.$email."\r\n" .
         'Reply-To: '.$email."\r\n".
