@@ -297,8 +297,8 @@ $(document).ready(function (){
         }
     });
 
-    // Send the email
-    $contactForm.submit(function(){
+    // Send the email 
+  /*  $contactForm.submit(function(){
         var $success      = '<strong>Success!</strong> Your message was sent.';
 	    var $error      = '<strong>Error!</strong> Your message was not sent - try again later...';
       	var response;
@@ -321,7 +321,39 @@ $(document).ready(function (){
             return false;
         }
         return false;
+    }); 
+	*/
+
+
+
+    // Send the email
+    $contactForm.submit(function(){
+        var $success      = '<strong>Success!</strong> Your message was sent.';
+	    var $error      = '<strong>Error!</strong> Your message was not sent - try again later...';
+      	var response;
+        if ($contactForm.valid()){
+            $.ajax({
+                //type: "POST",
+                method: "POST",
+                url: "//formspree.io/zurihunter92@gmail.com",
+                dataType: 'json',
+                data: $(this).serialize(),
+                success: function(msg) {
+                    if (msg === 'SEND') {
+                        response = '<div class="alert alert-success">'+ $success +'</div>';
+                    }
+                    else {
+                        response = '<div class="alert alert-warning">'+ $error +'</div>';
+                    }
+                    $(".alert-error,.alert-success").remove();
+                    $contactForm.prepend(response);
+                }
+             });
+            return false;
+        }
+        return false;
     });
+
 
 });
 
