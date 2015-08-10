@@ -339,7 +339,7 @@ $(document).ready(function (){
                 dataType: 'json',
                 data: $(this).serialize(),
                 success: function(msg) {
-                    if (msg === 'SEND') {
+                    if ($(this).valid()){
                         response = '<div class="alert alert-success">'+ $success +'</div>';
                     }
                     else {
