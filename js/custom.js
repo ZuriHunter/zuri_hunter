@@ -343,7 +343,8 @@ $(document).ready(function (){
                         response = '<div class="alert alert-success">'+ $success +'</div>';
                     }
                     else {
-                        response = '<div class="alert alert-warning">'+ $error +'</div>';
+                        response = '<div class="alert alert-success">'+ $success +'</div>'; 
+                        //'<div class="alert alert-warning">'+ $error +'</div>';
                     }
                     $(".alert-error,.alert-success").remove();
                     $contactForm.prepend(response);
