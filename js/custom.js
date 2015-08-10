@@ -326,7 +326,7 @@ $(document).ready(function (){
 
 
 
-    // Send the email
+    // Send the email..try this again
     $contactForm.submit(function(){
         var $success      = '<strong>Success!</strong> Your message was sent.';
 	    var $error      = '<strong>Error!</strong> Your message was not sent - try again later...';
