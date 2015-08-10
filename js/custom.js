@@ -327,12 +327,11 @@ $(document).ready(function (){
 
 
     // Send the email
-    $contactForm.submit(function(e){
+    $contactForm.submit(function(){
         var $success      = '<strong>Success!</strong> Your message was sent.';
 	    var $error      = '<strong>Error!</strong> Your message was not sent - try again later...';
       	var response;
         if ($contactForm.valid()){
-        	e.preventDefault();
             $.ajax({
                 //type: "POST",
                 method: "POST",
@@ -340,7 +339,7 @@ $(document).ready(function (){
                 dataType: 'json',
                 data: $(this).serialize(),
                 success: function(msg) {
-                    if ($(this).valid()) {
+                    if (msg === 'SEND') {
                         response = '<div class="alert alert-success">'+ $success +'</div>';
                     }
                     else {
