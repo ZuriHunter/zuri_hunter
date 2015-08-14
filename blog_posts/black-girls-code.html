@@ -47,6 +47,27 @@
 <div id="page-loader">	</div>
 <!-- Loader / End -->
 
+<!--Script for Facebook -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1630272240588511',
+      xfbml      : true,
+      version    : 'v2.4'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!--Script for Facebook/ End -->
+
+
 <!-- Header  -->
 <header id="nav-content" class="vertical-nav nav-black">
     
@@ -121,87 +142,21 @@
 
         	<p class="lead">On a Saturday afternoon I was given the privelege to spend time with girls like me!</p>
 
-            <p> "Black Girls Code" were setting up their office in Washington, DC and decided to have one of their many popular workshops, "Build a Game in a Day." This workshop was dedicated to 8-15 year old African American girls. During this workshop they used <a href="">Scratch</a>, educational coding platform to learn how to code a simple game such as Ping Pong. At the end of the workshop the girls get to show off what they made to their parents and take home some valuable lessons in programming.</p>
+            <p> "Black Girls Code" were setting up their office in Washington, DC and decided to have one of their many popular workshops, "Build a Game in a Day." This workshop was dedicated to 8-15 year old African American girls. During this workshop they used <a href="https://scratch.mit.edu/">Scratch</a>, educational coding platform to learn how to code a simple game such as Ping Pong. At the end of the workshop the girls get to show off what they made to their parents and take home some valuable lessons in programming.</p>
             
             <p>I had such an amazing time and learned so much from the girls! The one very memorable experience was when it was time to present and I had one girl who wouldn't leave her project because she was so in tune with adding additional cool features to it before presentation.  Seeing that amount of excitement and enthusiasm reminded me of how I first started when things finally started to work and click with me when it came to development. At the next event that they will have they will go in to teach the girls how to create their own website, which I will be volunteering as an instructor.</p>
+
+
+              <div
+                class="fb-like"
+                data-share="true"
+                data-width="450"
+                data-show-faces="true">
+              </div>
+
+
+            <div class="fb-comments" data-colorscheme="dark" data-href="http://developers.facebook.com/docs/plugins/comments/" data-numposts="1"></div>
             
-            <div class="row">
-            
-            	<div class="col-lg-8">
-            
-                  <!-- Comments -->
-                  <h4>Comments</h4>
-                  <ul class="comments-list">
-                      <!-- Single comment -->
-                      <li class="comment">
-                          <div class="comment-avatar"><img src="images/anonymous.jpg" alt="" /></div>
-                          <div class="comment-content">
-                              <div class="comment-meta">
-                                  <span class="comment-author">Tony Halik</span>
-                                  <span class="comment-reply"><a href="#">Reply</a></span>
-                                  <span class="comment-date">22 May, 2014</span>
-                              </div>
-                              <div class="comment-text">
-                                  Hi! This is awesome template! Where may I buy it? 
-                              </div>
-                          </div>
-                          <ul>
-                            <li class="comment">
-                                <div class="comment-avatar"><img src="images/my-photo.jpg" alt="" /></div>
-                                <div class="comment-content">
-                                    <div class="comment-meta">
-                                        <span class="comment-author">Johnatan Doe</span>
-                                        <span class="comment-reply"><a href="#">Reply</a></span>
-                                        <span class="comment-date">22 May, 2014</span>
-                                    </div>
-                                    <div class="comment-text">
-                                        Hi! Of course you may buy it by <a href="http://themeforest.net/user/suelo/portfolio" target="_blank">Themeforest</a>!
-                                    </div>
-                                </div>
-                            </li>
-                          </ul>
-                      </li>
-                      <!-- Single comment -->
-                      <li class="comment">
-                          <div class="comment-avatar"><img src="images/anonymous.jpg" alt="" /></div>
-                          <div class="comment-content">
-                              <div class="comment-meta">
-                                  <span class="comment-author">Helen Boobis</span>
-                                  <span class="comment-reply"><a href="#">Reply</a></span>
-                                  <span class="comment-date">22 May, 2014</span>
-                              </div>
-                              <div class="comment-text">
-                                  It's perfects for everyone! 
-                              </div>
-                          </div>
-                      </li>
-                  </ul>
-                  
-                </div>
-                
-                <div class="col-lg-4">
-            
-                  <!-- Comments -->
-                  <h4>Write a Comment</h4>
-                  <form role="form">
-                    <div class="form-group">
-                      <label for="name">Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter your name...">
-                    </div>
-                    <div class="form-group">
-                      <label for="comment-text">Your comment</label>
-                      <textarea class="form-control" id="comment-text" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-                  
-                </div>
-                
-            </div>
-                
-          </div>
-      
-      </div>
       
       <!-- Bottom Bar -->
       <div class="bottom-bar">
@@ -254,5 +209,20 @@
 -->
 
 </body>
+
+
+<!-- Javascript for Facebook Comment-->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=1630272240588511";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!-- End of Javascript for Facebook -->
 
 </html>

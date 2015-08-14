@@ -47,6 +47,27 @@
 <div id="page-loader">	</div>
 <!-- Loader / End -->
 
+<!--Script for Facebook -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1630272240588511',
+      xfbml      : true,
+      version    : 'v2.4'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!--Script for Facebook/ End -->
+
+
 <!-- Header  -->
 <header id="nav-content" class="vertical-nav nav-black">
     
@@ -98,7 +119,7 @@
           	<span class="post-date-alt">15 May, 2015</span>
             <h1 class="medium">Life As a Self Taught Developer</h1>
             <div class="post-meta pull-left">
-                <span><i class="fa fa-comment"></i><a href="#">0 comments</a></span>
+               
                 <span><i class="fa fa-tag"></i><a href="#">Professional Development</a></span>
             </div>
           </div>
@@ -155,85 +176,18 @@
 
  
 
-            
-            <div class="row">
-            
-            	<div class="col-lg-8">
-            
-                  <!-- Comments -->
-                  <h4>Comments</h4>
-                  <ul class="comments-list">
-                      <!-- Single comment -->
-                      <li class="comment">
-                          <div class="comment-avatar"><img src="images/anonymous.jpg" alt="" /></div>
-                          <div class="comment-content">
-                              <div class="comment-meta">
-                                  <span class="comment-author">Tony Halik</span>
-                                  <span class="comment-reply"><a href="#">Reply</a></span>
-                                  <span class="comment-date">22 May, 2014</span>
-                              </div>
-                              <div class="comment-text">
-                                  Hi! This is awesome template! Where may I buy it? 
-                              </div>
-                          </div>
-                          <ul>
-                            <li class="comment">
-                                <div class="comment-avatar"><img src="images/my-photo.jpg" alt="" /></div>
-                                <div class="comment-content">
-                                    <div class="comment-meta">
-                                        <span class="comment-author">Johnatan Doe</span>
-                                        <span class="comment-reply"><a href="#">Reply</a></span>
-                                        <span class="comment-date">22 May, 2014</span>
-                                    </div>
-                                    <div class="comment-text">
-                                        Hi! Of course you may buy it by <a href="http://themeforest.net/user/suelo/portfolio" target="_blank">Themeforest</a>!
-                                    </div>
-                                </div>
-                            </li>
-                          </ul>
-                      </li>
-                      <!-- Single comment -->
-                      <li class="comment">
-                          <div class="comment-avatar"><img src="images/anonymous.jpg" alt="" /></div>
-                          <div class="comment-content">
-                              <div class="comment-meta">
-                                  <span class="comment-author">Helen Boobis</span>
-                                  <span class="comment-reply"><a href="#">Reply</a></span>
-                                  <span class="comment-date">22 May, 2014</span>
-                              </div>
-                              <div class="comment-text">
-                                  It's perfects for everyone! 
-                              </div>
-                          </div>
-                      </li>
-                  </ul>
-                  
+          
+              <div
+                class="fb-like"
+                data-share="true"
+                data-width="450"
+                data-show-faces="true">
                 </div>
-                
-                <div class="col-lg-4">
-            
-                  <!-- Comments -->
-                  <h4>Write a Comment</h4>
-                  <form role="form">
-                    <div class="form-group">
-                      <label for="name">Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter your name...">
-                    </div>
-                    <div class="form-group">
-                      <label for="comment-text">Your comment</label>
-                      <textarea class="form-control" id="comment-text" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-                  
-                </div>
-                
-            </div>
-                
-          </div>
-      
-      </div>
-      
+
+
+            <div class="fb-comments" data-colorscheme="dark" data-href="http://developers.facebook.com/docs/plugins/comments/" data-numposts="1"></div>
+
+
       <!-- Bottom Bar -->
       <div class="bottom-bar">
       
@@ -285,5 +239,20 @@
 -->
 
 </body>
+
+
+<!-- Javascript for Facebook Comment-->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=1630272240588511";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!-- End of Javascript for Facebook -->
 
 </html>
